@@ -42,5 +42,15 @@ function colors() {
         console.log("1", hours < id);
         console.log("2", hours > id);
         console.log("3", id === hours);
+        if (id > hours) {
+            // item.addClass("future")
+            item.classList.add("future");
+        } else if (id === hours) {
+            // item.addClass("present");
+            item.classList.add("present");
+        } else {
+            // item.addClass("past");
+            item.classList.add("past");
+        }
     });
 }
